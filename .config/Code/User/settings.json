@@ -48,5 +48,8 @@
     "emmet.triggerExpansionOnTab": true,
 
     // Extensions
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "[markdown]": {
+        "editor.defaultFormatter": "darkriszty.markdown-table-prettify"
+    }
 }
