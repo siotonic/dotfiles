@@ -43,6 +43,7 @@
 
     // Git
     "git.autofetch": false,
+    "diffEditor.ignoreTrimWhitespace": false,
 
     // Emmet
     "emmet.triggerExpansionOnTab": true,
