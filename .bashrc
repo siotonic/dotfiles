@@ -13,12 +13,12 @@ dynamic_prompt() {
     local GIT_BRANCH=$(git branch --show-current 2> /dev/null)
     if [ ! -z "$GIT_BRANCH" ]; then
         echo -en ' \e[1;93m' # yellow (bold)
-        echo -n "($GIT_BRANCH)"
+        echo -n "(${GIT_BRANCH})"
 
         # Git status
         local GIT_STATUS=$(git status --porcelain | wc -l)
         if [ ! "$GIT_STATUS" -eq 0 ]; then
-            echo -n "±$GIT_STATUS"
+            echo -n "±${GIT_STATUS}"
         fi
     fi
 
