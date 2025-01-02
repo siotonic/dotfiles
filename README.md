@@ -1,6 +1,6 @@
 # dotfiles
 
-This repository is used to store my configuration files for my personnal needs. Feel free to check only the configuration files you are interested in.
+This repository is used to store my configuration files for my personnal needs. You probably don't want the full configuration, feel free to check only the configuration files you are interested in.
 
 ## Installation
 
@@ -22,7 +22,7 @@ This repository is used to store my configuration files for my personnal needs. 
     xargs -a packages.list sudo pacman -S
     ```
 
-4. Create symlinks to files inside this repository :
+4. Create symbolic links:
 
     ```bash
     stow --adopt --no-folding .
@@ -33,3 +33,5 @@ This repository is used to store my configuration files for my personnal needs. 
     ```bash
     git restore .
     ```
+
+> ***NOTE:** By default, `stow` command create symbolic links inside the parent directory. Therefore, it is recommended to clone this repository inside home directory.*
