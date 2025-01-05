@@ -43,6 +43,7 @@
 
     // Git
     "git.autofetch": false,
+    "git.enableSmartCommit": true,
     "diffEditor.ignoreTrimWhitespace": false,
 
     // Emmet
