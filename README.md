@@ -28,5 +28,5 @@ This repository is used to store my configuration files for my personal needs. Y
     git restore .
     ```
 
-> ***\* NOTE:** By default, `stow` command creates symbolic links inside the parent directory. Therefore, it is recommended to clone this repository inside home directory.*
+> ***\* NOTE:** By default, `stow` command creates symbolic links inside the parent directory. Therefore, it is recommended to clone this repository directly inside home directory.*
 
