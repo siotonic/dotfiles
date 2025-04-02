@@ -46,6 +46,9 @@
     "git.enableSmartCommit": true,
     "diffEditor.ignoreTrimWhitespace": false,
 
+    // Copilot
+    "chat.commandCenter.enabled": false,
+
     // Emmet
     "emmet.triggerExpansionOnTab": true,
 
