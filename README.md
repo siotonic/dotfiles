@@ -4,38 +4,27 @@ This repository is used to store my configuration files with a quick installatio
 
 ## Installation
 
-1. Install required dependencies:
+1. Install minimum required dependencies:
 
     ```bash
-    sudo pacman -S base-devel git stow
+    sudo pacman -S --needed --noconfirm git make
     ```
 
-2. Install [`paru`](https://github.com/Morganamilo/paru) for managing packages from the [Arch User Repository (AUR)](https://aur.archlinux.org/):
+2. Run installation script:
 
     ```bash
-    git clone https://aur.archlinux.org/paru.git
-    cd paru
-    makepkg -si
-    cd ..
-    rm -rf paru
+    make install
     ```
 
-3. Clone this repository:
+3. Create symbolic links in your home directory:
 
     ```bash
-    git clone https://github.com/siotonic/dotfiles.git && cd dotfiles
+    make links
     ```
 
-4. Create symbolic links*:
+4. If necessary, you can cancel changes to force usage of the configuration of this repository:
 
     ```bash
-    stow --adopt --no-folding .
+    make restore
     ```
 
-5. If necessary, you can cancel changes to force usage of the configuration of this repository:
-
-    ```bash
-    git restore .
-    ```
-
-> ***\* NOTE:** By default, `stow` command creates symbolic links inside the parent directory. Therefore, it is recommended to clone this repository directly inside home directory.*
