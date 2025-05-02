@@ -10,7 +10,7 @@ install-paru:
 
 .PHONY: install-packages
 install-packages:
-	sudo pacman -S --needed --noconfirm fish git less tree stow hyprlock playerctl pavucontrol
+	sudo pacman -S --needed --noconfirm fish git less tree stow hyprlock playerctl pavucontrol noto-fonts-emoji
 	paru -Sa --needed --noconfirm hyprshot
 
 .PHONY: links
