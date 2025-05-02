@@ -27,4 +27,3 @@ This repository is used to store my configuration files with a quick installatio
     ```bash
     make restore
     ```
-
