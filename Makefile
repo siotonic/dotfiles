@@ -2,6 +2,7 @@
 install:
 	make install-paru
 	make install-packages
+	chsh -s $(which fish)
 
 .PHONY: install-paru
 install-paru:
@@ -9,7 +10,7 @@ install-paru:
 
 .PHONY: install-packages
 install-packages:
-	sudo pacman -S --needed --noconfirm git less tree stow hyprlock playerctl pavucontrol
+	sudo pacman -S --needed --noconfirm fish git less tree stow hyprlock playerctl pavucontrol
 	paru -Sa --needed --noconfirm hyprshot
 
 .PHONY: links
