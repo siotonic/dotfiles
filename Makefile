@@ -20,7 +20,7 @@ hyprland:
 
 .PHONY: terminal
 terminal:
-	sudo pacman -S --needed --noconfirm fish 
+	sudo pacman -S --needed --noconfirm fish ghostty  
 	chsh -s $(which fish)
 
 .PHONY: links
