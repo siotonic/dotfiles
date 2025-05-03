@@ -3,5 +3,5 @@ theme = dark:catppuccin-mocha, light:catppuccin-latte
 window-padding-x = 16
 window-padding-y = 16
 
-# Font size in points
+font-family = "JetBrains Mono"
 font-size = 10.5 
