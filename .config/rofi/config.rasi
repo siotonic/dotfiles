@@ -1,0 +1,48 @@
+@theme "/dev/null"
+
+* {
+    font: "JetBrains Mono 10.5";
+    background-color: transparent;
+    text-color: #cdd6f4;
+}
+
+mainbox {
+    background-color: #11111b;
+    border: 1px;
+    border-color: #45475a;
+    border-radius: 4px;
+}
+
+inputbar {
+    padding: 16px;
+    background-color: #181825;
+}
+
+prompt {
+    enabled: false;
+}
+
+entry {
+    placeholder: "Search";
+    placeholder-color: #7f849c;
+}
+
+num-rows {
+    enabled: false;
+}
+
+listview {
+    fixed-height: false;
+    dynamic: false;
+    lines: 10;
+}
+
+element {
+    children: [ element-icon, element-text ];
+    spacing: 8px;
+    padding: 8px 16px;
+}
+
+element selected.normal {
+    background-color: #313244;
+}
