@@ -10,19 +10,25 @@ This repository is used to store my configuration files with a quick installatio
     sudo pacman -S --needed --noconfirm git make
     ```
 
-2. Run installation script:
+2. Clone this repository:
+
+    ```bash
+    git clone https://github.com/siotonic/dotfiles.git && cd dotfiles
+    ```
+
+3. Run installation script:
 
     ```bash
     make install
     ```
 
-3. Create symbolic links in your home directory:
+4. Create symbolic links in your home directory:
 
     ```bash
     make links
     ```
 
-4. If necessary, you can cancel changes to force usage of the configuration of this repository:
+5. If necessary, you can cancel changes to force usage of the configuration of this repository:
 
     ```bash
     make restore
