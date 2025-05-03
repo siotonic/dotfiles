@@ -1,4 +1,4 @@
-theme = catppuccin-mocha
+theme = dark:catppuccin-mocha, light:catppuccin-latte
 
 window-padding-x = 16
 window-padding-y = 16

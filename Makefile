@@ -15,7 +15,7 @@ utils:
 
 .PHONY: hyprland
 hyprland:
-	sudo pacman -S --needed --noconfirm hyprlock playerctl pavucontrol
+	sudo pacman -S --needed --noconfirm hyprlock playerctl pavucontrol xdg-desktop-portal-gtk
 	paru -Sa --needed --noconfirm hyprshot
 
 .PHONY: terminal
