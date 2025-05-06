@@ -11,7 +11,7 @@ paru:
 
 .PHONY: utils 
 utils:
-	sudo pacman -S --needed --noconfirm man git less tree stow noto-fonts-emoji ttf-jetbrains-mono
+	sudo pacman -S --needed --noconfirm man git less tree stow noto-fonts-emoji ttf-jetbrains-mono-nerd
 
 .PHONY: hyprland
 hyprland:
