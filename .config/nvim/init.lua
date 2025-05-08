@@ -7,6 +7,9 @@ vim.opt.expandtab = true
 
 vim.opt.scrolloff = 5
 
+vim.opt.listchars = { tab = "▸ ", trail = "·", nbsp = "+" }
+vim.opt.list = true
+
 -- Keybindings
 vim.g.mapleader = " "
 

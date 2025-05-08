@@ -7,9 +7,9 @@ install:
 
 .PHONY: paru
 paru:
-	git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si && cd ..	&& rm -rf paru
+	git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si && cd .. && rm -rf paru
 
-.PHONY: utils 
+.PHONY: utils
 utils:
 	sudo pacman -S --needed --noconfirm man git less tree stow noto-fonts-emoji ttf-jetbrains-mono-nerd fastfetch neovim
 
@@ -20,7 +20,7 @@ hyprland:
 
 .PHONY: terminal
 terminal:
-	sudo pacman -S --needed --noconfirm fish ghostty  
+	sudo pacman -S --needed --noconfirm fish ghostty
 	chsh -s $(which fish)
 
 .PHONY: links
