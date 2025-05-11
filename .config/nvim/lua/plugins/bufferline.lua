@@ -9,15 +9,17 @@ return {
             }
         })
 
-        vim.keymap.set("n", "<leader>&", "<Cmd>BufferLineGoToBuffer 1<CR>")
-        vim.keymap.set("n", "<leader>é", "<Cmd>BufferLineGoToBuffer 2<CR>")
-        vim.keymap.set("n", "<leader>\"", "<Cmd>BufferLineGoToBuffer 3<CR>")
-        vim.keymap.set("n", "<leader>'", "<Cmd>BufferLineGoToBuffer 4<CR>")
-        vim.keymap.set("n", "<leader>(", "<Cmd>BufferLineGoToBuffer 5<CR>")
-        vim.keymap.set("n", "<leader>-", "<Cmd>BufferLineGoToBuffer 6<CR>")
-        vim.keymap.set("n", "<leader>è", "<Cmd>BufferLineGoToBuffer 7<CR>")
-        vim.keymap.set("n", "<leader>_", "<Cmd>BufferLineGoToBuffer 8<CR>")
-        vim.keymap.set("n", "<leader>ç", "<Cmd>BufferLineGoToBuffer 9<CR>")
-        vim.keymap.set("n", "<leader>$", "<Cmd>BufferLineGoToBuffer -1<CR>")
+        vim.keymap.set("n", "<leader>&", ":BufferLineGoToBuffer 1<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>é", ":BufferLineGoToBuffer 2<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>\"", ":BufferLineGoToBuffer 3<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>'", ":BufferLineGoToBuffer 4<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>(", ":BufferLineGoToBuffer 5<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>-", ":BufferLineGoToBuffer 6<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>è", ":BufferLineGoToBuffer 7<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>_", ":BufferLineGoToBuffer 8<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>ç", ":BufferLineGoToBuffer 9<CR>", { silent = true })
+        vim.keymap.set("n", "<leader>$", ":BufferLineGoToBuffer -1<CR>", { silent = true })
+
+        vim.keymap.set("n", "<leader>w", ":bd<CR>", { silent = true })
     end
 }
