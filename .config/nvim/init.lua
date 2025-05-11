@@ -13,7 +13,7 @@ vim.opt.list = true
 -- Keybindings
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>p", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>p", ":Ex<CR>")
 
 vim.keymap.set("v", "<S-Up>", ":move '<-2<CR>gv=gv")
 vim.keymap.set("v", "<S-Down>", ":move '>+1<CR>gv=gv")
