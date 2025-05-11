@@ -1,4 +1,6 @@
 -- Options
+vim.opt.swapfile = false
+
 vim.opt.relativenumber = true
 vim.opt.number = true
 
