@@ -58,5 +58,5 @@ return {
                 apply_theme(current_theme)
             end
         end))
-    end
+    end,
 }

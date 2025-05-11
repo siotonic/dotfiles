@@ -27,4 +27,4 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- Plugins
-require('config.lazy')
+require("config.lazy")

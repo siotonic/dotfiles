@@ -21,5 +21,5 @@ return {
         vim.keymap.set("n", "<leader>$", ":BufferLineGoToBuffer -1<CR>", { silent = true })
 
         vim.keymap.set("n", "<leader>w", ":bd<CR>", { silent = true })
-    end
+    end,
 }

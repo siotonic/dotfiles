@@ -1,17 +1,18 @@
 return {
-    'nvim-telescope/telescope.nvim', branch = '0.1.x',
+    "nvim-telescope/telescope.nvim", branch = "0.1.x",
     dependencies = {
-        'nvim-lua/plenary.nvim',
-        'nvim-tree/nvim-web-devicons'
+        "nvim-lua/plenary.nvim",
+        "nvim-tree/nvim-web-devicons",
     },
     config = function()
-        local telescope = require('telescope')
-        local telescope_config = require('telescope.config')
-        local vimgrep_arguments = { unpack(telescope_config.values.vimgrep_arguments) }
+        local telescope = require("telescope")
+        local telescope_config = require("telescope.config")
 
-        table.insert(vimgrep_arguments, '--hidden')
-        table.insert(vimgrep_arguments, '--glob')
-        table.insert(vimgrep_arguments, '!**/.git/*')
+        local vimgrep_arguments = { table.unpack(telescope_config.values.vimgrep_arguments) }
+
+        table.insert(vimgrep_arguments, "--hidden")
+        table.insert(vimgrep_arguments, "--glob")
+        table.insert(vimgrep_arguments, "!**/.git/*")
 
         telescope.setup({
             defaults = {
@@ -19,15 +20,15 @@ return {
             },
             pickers = {
                 find_files = {
-                    find_command = { 'rg', '--files', '--hidden', '--glob', '!**/.git/*' },
+                    find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
                 },
             },
         })
 
-        local builtin = require('telescope.builtin')
+        local builtin = require("telescope.builtin")
 
-        vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-        vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-        vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-    end
+        vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
+        vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
+        vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
+    end,
 }

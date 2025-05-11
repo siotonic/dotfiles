@@ -5,5 +5,5 @@ return {
         lspconfig.lua_ls.setup({})
 
         vim.keymap.set("i", "<C-Space>", "<C-x><C-o>")
-    end
+    end,
 }
