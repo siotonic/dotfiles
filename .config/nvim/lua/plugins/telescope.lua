@@ -8,7 +8,7 @@ return {
         local telescope = require("telescope")
         local telescope_config = require("telescope.config")
 
-        local vimgrep_arguments = { table.unpack(telescope_config.values.vimgrep_arguments) }
+        local vimgrep_arguments = { unpack(telescope_config.values.vimgrep_arguments) }
 
         table.insert(vimgrep_arguments, "--hidden")
         table.insert(vimgrep_arguments, "--glob")
