@@ -31,5 +31,5 @@ This repository is used to store my configuration files with a quick installatio
 5. If necessary, you can cancel changes to force usage of the configuration of this repository:
 
     ```bash
-    make restore
+    git restore .
     ```

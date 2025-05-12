@@ -42,7 +42,3 @@ terminal:
 .PHONY: links
 links:
 	stow . --adopt --no-folding --target ~ --verbose
-
-.PHONY: restore
-restore:
-	git restore .
