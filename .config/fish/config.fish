@@ -5,7 +5,7 @@ set -g fish_greeting
 function fish_prompt
     set last_status $status
 
-    # Environement
+    # Environment
     set_color green && echo -n $USER
     set_color normal && echo -n "@$hostname"
 

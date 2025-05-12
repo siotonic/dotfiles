@@ -5,7 +5,7 @@
 function dynamic_prompt {
     local LAST_STATUS=$?
 
-    # Environement
+    # Environment
     PS1="\[\e[32m\]$USER"
     PS1+="\[\e[0m\]@$HOSTNAME"
 
