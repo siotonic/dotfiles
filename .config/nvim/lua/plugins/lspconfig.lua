@@ -1,11 +1,17 @@
 return {
     "neovim/nvim-lspconfig",
-    config = function()
+    opts = {
+        servers = {
+            lua_ls = {}
+        }
+    },
+    config = function(_, opts)
         local lspconfig = require("lspconfig")
-        local capabilities = require("blink.cmp").get_lsp_capabilities()
+        local blink = require("blink.cmp")
 
-        lspconfig.lua_ls.setup({ capabilities = capabilities })
-
-        vim.keymap.set("i", "<C-Space>", "<C-x><C-o>")
+        for server, config in pairs(opts.servers) do
+            config.capabilities = blink.get_lsp_capabilities(config.capabilities)
+            lspconfig[server].setup(config)
+        end
     end,
 }
