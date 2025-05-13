@@ -1,0 +1,34 @@
+* {
+    all: initial;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    color: #cdd6f4;
+}
+
+window#waybar {
+    background-color: #11111b;
+}
+
+window#waybar > box {
+    padding: 8px 16px;
+}
+
+#workspaces button {
+    margin-right: 8px;
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+}
+
+#pulseaudio-slider trough {
+    min-height: 6px;
+    min-width: 64px;
+    border-radius: 8px;
+    background-color: #313244;
+}
+
+#pulseaudio-slider highlight {
+    border-radius: 8px;
+    background-color: #cdd6f4;
+}
