@@ -19,7 +19,7 @@ packages:
 
 .PHONY: terminal
 terminal:
-	sudo pacman -S --needed --noconfirm fish
+	sudo pacman -S --needed --noconfirm fish alacritty
 	chsh -s /usr/bin/fish
 
 .PHONY: links
