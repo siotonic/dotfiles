@@ -20,7 +20,7 @@ packages:
 .PHONY: terminal
 terminal:
 	sudo pacman -S --needed --noconfirm fish
-	chsh -s $(shell which fish)
+	chsh -s /usr/bin/fish
 
 .PHONY: links
 links:
