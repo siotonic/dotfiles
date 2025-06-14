@@ -3,6 +3,7 @@ install:
 	make paru
 	make packages
 	make terminal
+	make hyprland
 
 .PHONY: paru
 paru:
@@ -15,12 +16,19 @@ packages:
 		less \
 		stow \
 		noto-fonts-emoji \
-		ttf-jetbrains-mono-nerd \
+		ttf-jetbrains-mono-nerd
 
 .PHONY: terminal
 terminal:
 	sudo pacman -S --needed --noconfirm fish alacritty
 	chsh -s /usr/bin/fish
+
+.PHONY: hyprland
+hyprland:
+	sudo pacman -S --needed --noconfirm \
+		alacritty \
+		playerctl
+	sudo pacman -Rnsu kitty
 
 .PHONY: links
 links:
