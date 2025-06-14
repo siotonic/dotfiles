@@ -27,6 +27,7 @@ terminal:
 hyprland:
 	sudo pacman -S --needed --noconfirm \
 		alacritty \
+		hyprshot \
 		playerctl
 	sudo pacman -Rnsu kitty
 
