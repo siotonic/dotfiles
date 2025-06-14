@@ -28,8 +28,8 @@ hyprland:
 	sudo pacman -S --needed --noconfirm \
 		alacritty \
 		hyprshot \
-		playerctl
-	sudo pacman -Rnsu kitty
+		playerctl \
+		xdg-desktop-portal-gtk
 
 .PHONY: links
 links:
