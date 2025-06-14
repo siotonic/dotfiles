@@ -28,6 +28,7 @@ hyprland:
 	sudo pacman -S --needed --noconfirm \
 		alacritty \
 		hyprshot \
+		hyprlock \
 		playerctl \
 		xdg-desktop-portal-gtk
 
