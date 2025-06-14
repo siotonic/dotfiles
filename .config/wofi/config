@@ -1,0 +1,7 @@
+location=top_left
+width=100%
+allow_images=true
+image_size=18
+dynamic_lines=true
+prompt=
+no_actions=true
