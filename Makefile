@@ -29,6 +29,7 @@ hyprland:
 		alacritty \
 		hyprshot \
 		hyprlock \
+		hyprpaper \
 		playerctl \
 		xdg-desktop-portal-gtk \
 		waybar
