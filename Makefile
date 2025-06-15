@@ -30,7 +30,8 @@ hyprland:
 		hyprshot \
 		hyprlock \
 		playerctl \
-		xdg-desktop-portal-gtk
+		xdg-desktop-portal-gtk \
+		waybar
 
 .PHONY: links
 links:
