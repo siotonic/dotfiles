@@ -1,0 +1,31 @@
+{
+    "output": ["DP-1"],
+    "spacing": 16,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio/slider", "network", "bluetooth", "battery"],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "•",
+            "active": "●"
+        }
+    },
+    "network": {
+        "format": "{icon}",
+        "format-ethernet": "󰈀 ",
+        "format-wifi": "󰖩 ",
+        "format-disconnected": "󱚼 "
+    },
+    "bluetooth": {
+        "format-on": "󰂯 ",
+        "format-connected": "󰂯 ",
+        "format-off": "󰂲 ",
+        "format-disabled": "",
+        "format-no-controller": ""
+    },
+    "battery": {
+        "format": "{icon}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    }
+}

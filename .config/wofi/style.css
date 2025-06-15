@@ -9,7 +9,7 @@
 #input {
     background-color: #181825;
     padding: 8px 16px;
-    color: #fff;
+    color: #cdd6f4;
 }
 
 #input > image.left {
@@ -33,7 +33,7 @@
 
 #entry:selected {
     background: #313244;
-    color: #fff;
+    color: #cdd6f4;
     outline: none;
 }
 
