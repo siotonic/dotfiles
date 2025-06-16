@@ -10,11 +10,12 @@
 #input {
     background-color: #000;
     padding: 8px 16px;
-    border: 1px solid #333;
+    border: 1px solid #fff;
+    border-bottom: none;
 }
 
 #inner-box {
-    border: 1px solid #333;
+    border: 1px solid #fff;
     border-top: none;
 }
 
