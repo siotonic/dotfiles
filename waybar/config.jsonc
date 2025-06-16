@@ -1,9 +1,9 @@
 {
+    "position": "bottom",
     "output": ["DP-1"],
     "spacing": 16,
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["pulseaudio/slider", "network", "bluetooth", "battery"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "network", "bluetooth", "battery", "clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -11,11 +11,26 @@
             "active": "●"
         }
     },
+    "pulseaudio": {
+      "format": "{volume}% 󰕾 "
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{}%  "
+    },
+    "memory": {
+        "interval": 10,
+        "format": "{}%  "
+    },
     "network": {
-        "format": "{icon}",
-        "format-ethernet": "󰈀 ",
-        "format-wifi": "󰖩 ",
-        "format-disconnected": "󱚼 "
+        "interval": 10,
+        "format": "{bandwidthTotalBits} {icon}",
+        "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}\nNetmask: {netmask}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}\nSignal strength: {signalStrength}",
+        "format-icons": {
+            "ethernet": "󰈀 ",
+            "wifi": "󰖩 ",
+            "disconnected": "󰚦 "
+        }
     },
     "bluetooth": {
         "format-on": "󰂯 ",
@@ -25,7 +40,26 @@
         "format-no-controller": ""
     },
     "battery": {
-        "format": "{icon}",
+        "format": "{capacity}% {icon}",
         "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "clock": {
+        "format": "{:L%a %d %b %H:%M}",
+        "tooltip-format": "{calendar}",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffffff'><b>{}</b></span>",
+                "days": "<span color='#cecece'>{}</span>",
+                "weekdays": "<span color='#ffffff'><b>{}</b></span>",
+                "today": "<span color='#ffffff'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     }
 }

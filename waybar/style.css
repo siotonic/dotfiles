@@ -2,11 +2,11 @@
     all: initial;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;
-    color: #cdd6f4;
+    color: #fff;
 }
 
 window#waybar {
-    background-color: #11111b;
+    background-color: #000;
 }
 
 window#waybar > box {
@@ -18,17 +18,14 @@ window#waybar > box {
 }
 
 #workspaces button.urgent {
-    color: #f38ba8;
+    color: #ff0000;
 }
 
-#pulseaudio-slider trough {
-    min-height: 6px;
-    min-width: 64px;
-    border-radius: 8px;
-    background-color: #313244;
+tooltip {
+    background-color: #000;
+    border-radius: 4px;
 }
 
-#pulseaudio-slider highlight {
-    border-radius: 8px;
-    background-color: #cdd6f4;
+tooltip box {
+    padding: 8px;
 }
