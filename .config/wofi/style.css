@@ -4,21 +4,22 @@
     border-radius: 0;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
+    color: #fff;
 }
 
 #input {
-    background-color: #181825;
+    background-color: #000;
     padding: 8px 16px;
-    color: #cdd6f4;
+    border: 1px solid #333;
+}
+
+#inner-box {
+    border: 1px solid #333;
+    border-top: none;
 }
 
 #input > image.left {
-    color: #9399b2;
     margin-right: 16px;
-}
-
-#input > image.right {
-    color: #9399b2;
 }
 
 #input:focus {
@@ -26,14 +27,12 @@
 }
 
 #entry {
-    background-color: #1e1e2e;
+    background-color: #000;
     padding: 8px 16px;
-    color: #bac2de;
 }
 
 #entry:selected {
-    background: #313244;
-    color: #cdd6f4;
+    background: #222;
     outline: none;
 }
 
