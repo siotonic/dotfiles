@@ -30,6 +30,7 @@ hyprland:
 		hyprshot \
 		hyprlock \
 		hyprpaper \
+		hyprpicker \
 		playerctl \
 		xdg-desktop-portal-gtk \
 		waybar
