@@ -2,11 +2,11 @@
     all: initial;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;
-    color: #fff;
+    color: #F0F0F0;
 }
 
 window#waybar {
-    background-color: #000;
+    background-color: #0F0F0F;
 }
 
 window#waybar > box {
@@ -18,11 +18,11 @@ window#waybar > box {
 }
 
 #workspaces button.urgent {
-    color: #ff0000;
+    color: #FF0000;
 }
 
 tooltip {
-    background-color: #000;
+    background-color: #0F0F0F;
     border-radius: 4px;
 }
 

@@ -1,10 +1,9 @@
 {
     // Telemetry
     "telemetry.telemetryLevel": "off",
-
     // Workbench
-    "workbench.colorTheme": "Catppuccin Mocha",
-    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.colorTheme": "Monochrome Dark",
+    "workbench.iconTheme": null,
     "workbench.sideBar.location": "left",
     "workbench.list.smoothScrolling": true,
     "workbench.startupEditor": "none",
@@ -39,7 +38,7 @@
     "explorer.confirmDelete": false,
 
     // Files
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "off",
     "files.defaultLanguage": "markdown",
 
     // Git
