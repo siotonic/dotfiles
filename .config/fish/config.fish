@@ -24,4 +24,5 @@ end
 
 # Abbreviations
 abbr -a ll -- 'ls -la'
+abbr -a n -- 'nvim'
 abbr -a v -- 'vim'

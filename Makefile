@@ -16,7 +16,8 @@ packages:
 		less \
 		stow \
 		noto-fonts-emoji \
-		ttf-jetbrains-mono-nerd
+		ttf-jetbrains-mono-nerd \
+		neovim
 
 .PHONY: terminal
 terminal:
