@@ -2,11 +2,11 @@
     all: initial;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 13px;
-    color: #F0F0F0;
+    color: #f0f0f0;
 }
 
 window#waybar {
-    background-color: #0F0F0F;
+    background-color: #0f0f0f;
 }
 
 window#waybar > box {
@@ -18,11 +18,11 @@ window#waybar > box {
 }
 
 #workspaces button.urgent {
-    color: #FF0000;
+    color: #ff0000;
 }
 
 tooltip {
-    background-color: #0F0F0F;
+    background-color: #0f0f0f;
     border-radius: 4px;
 }
 
@@ -39,5 +39,5 @@ tooltip box {
 
 #pulseaudio-slider highlight {
     border-radius: 8px;
-    background-color: #f3f3f3;
+    background-color: #f0f0f0;
 }
