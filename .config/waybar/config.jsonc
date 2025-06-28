@@ -3,33 +3,12 @@
     "output": ["DP-1"],
     "spacing": 16,
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["pulseaudio", "cpu", "memory", "network", "bluetooth", "battery", "clock"],
+    "modules-right": ["pulseaudio/slider", "bluetooth", "battery", "clock"],
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
             "default": "•",
             "active": "●"
-        }
-    },
-    "pulseaudio": {
-      "format": "{volume}% 󰕾 "
-    },
-    "cpu": {
-        "interval": 10,
-        "format": "{}%  "
-    },
-    "memory": {
-        "interval": 10,
-        "format": "{}%  "
-    },
-    "network": {
-        "interval": 10,
-        "format": "{bandwidthTotalBits} {icon}",
-        "tooltip-format": "Interface: {ifname}\nIP: {ipaddr}\nNetmask: {netmask}\nUp: {bandwidthUpBits}\nDown: {bandwidthDownBits}\nSignal strength: {signalStrength}",
-        "format-icons": {
-            "ethernet": "󰈀 ",
-            "wifi": "󰖩 ",
-            "disconnected": "󰚦 "
         }
     },
     "bluetooth": {

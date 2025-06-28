@@ -29,3 +29,15 @@ tooltip {
 tooltip box {
     padding: 8px;
 }
+
+#pulseaudio-slider trough {
+    min-height: 4px;
+    min-width: 40px;
+    border-radius: 8px;
+    background-color: #3f3f3F;
+}
+
+#pulseaudio-slider highlight {
+    border-radius: 8px;
+    background-color: #f3f3f3;
+}
