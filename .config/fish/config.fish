@@ -26,3 +26,4 @@ end
 abbr -a ll -- 'ls -la'
 abbr -a n -- 'nvim'
 abbr -a v -- 'vim'
+abbr -a lg -- 'lazygit'
