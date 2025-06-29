@@ -14,7 +14,7 @@ return {
         "LazyGitFilterCurrentFile",
     },
     keys = {
-        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit", silent = true }
+        { "<leader>lg", ":LazyGit<CR>", desc = "LazyGit" }
     },
     config = function()
         require("telescope").load_extension("lazygit")
