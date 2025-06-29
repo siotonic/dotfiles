@@ -17,7 +17,8 @@ packages:
 		stow \
 		noto-fonts-emoji \
 		ttf-jetbrains-mono-nerd \
-		neovim
+		neovim \
+		lazygit
 
 .PHONY: terminal
 terminal:
