@@ -1,0 +1,13 @@
+[global]
+monitor = DP-1
+origin = bottom-right
+offset = (8, 8)
+frame_width = 0
+highlight = false
+width = (200, 450)
+padding = 24
+horizontal_padding = 24
+gap_size = 8
+background = "#0f0f0f"
+foreground = "#f0f0f0"
+font = "JetBrainsMono Nerd Font 9"
